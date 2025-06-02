@@ -25,8 +25,8 @@ public class RecordedSimulation extends Simulation {
     setUp(
       scn.injectOpen(
         nothingFor(Duration.ofSeconds(5)),              // warmup
-        rampUsers(18).during(Duration.ofMinutes(2)),  // ramp up 18 users over 2 minutes
-        constantUsersPerSec(15).during(Duration.ofMinutes(5)) // sustain 15 users/sec לאורך חמש דקות
+        rampUsers(20).during(Duration.ofMinutes(2)),  // ramp up 18 users over 2 minutes
+        constantUsersPerSec(20).during(Duration.ofMinutes(5)) // sustain 15 users/sec לאורך חמש דקות
       )
     ).protocols(httpProtocol)
      .assertions(
